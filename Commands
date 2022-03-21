@@ -1,0 +1,10 @@
+#To create a database;
+create database example;
+
+#To create a table and the fields;
+create table pessoas (
+name 
+age
+sex
+nationality
+);
