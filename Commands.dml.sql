@@ -14,7 +14,7 @@ nationality varchar(20)
 );
 
 #To use a table or a database:
-use database;
+use exampleDB;
 
 #To describe a table 
 describe pessoas;
