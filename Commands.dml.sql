@@ -52,7 +52,7 @@ drop database exampleDB;
 		PRIMARY KEY (id)																																							 
 		) default charset = utf8;																																							 
 																																									 
-#Now we will add some datas in the tables																																									 
+#Now we are going to add some datas to the tables																																									 
 	
 	INSERT INTO pessoas																																								 
 		(name, born, sex, weight, height, nacionaliy)
