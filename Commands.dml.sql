@@ -45,10 +45,10 @@ drop database exampleDB;
 		id int NOT NULL AUTO_INCREMENT,																																							 
 		name varchar(30) NOT NULL,																																								 
 		born date,																																							 
-		sex	enum('M' , 'F'),																																						 
+		sex enum('M' , 'F'),																																						 
 		weight decimal(5,2),																																						 
 		height decimal(3,2),																																							 
-		nacionality	varchar(20) DEFAULT 'Brasil',
+		nacionality varchar(20) DEFAULT 'Brasil',
 		PRIMARY KEY (id)																																							 
 		) default charset = utf8;																																							 
 																																									 
