@@ -92,12 +92,36 @@ drop database exampleDB;
 #To modify a column (A column parameter for example)
 	modify column profissao varchar(20) not null default '';
 
-The command above uses the "default" because by default the workbench put every new command as null, and add a parameter with "not null" will bug the system
+#The command above uses the "default" because by default the workbench put every new command as null, and add a parameter with "not null" will bug the system, we can never let one constrain override the other
 
+#Now to rename a column:
+	alter table pessoas
+	change column profissao prof varchar(20);
+	#in this command we have to put the current name at the column and the new
 
+#Now to rename a table
+	alter table pessoas 
+	rename to gafanhotos;
 
+#now let's create a new table
+										   
+	create table if not exists cursos (
+	name varchar(30) not null unique,
+	description text,
+	carga int unsigned,
+	totalclasses int unsigned,
+	ano year default '2016'
+	) default charset = utf8;
 
+	alter table cursos
+	add column idcurso int first;
 
+	alter table cursos
+	add primary key(idcurso);
+
+										   
+										   
+										  
 
 
 
