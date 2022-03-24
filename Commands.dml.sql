@@ -18,7 +18,7 @@ use exampleDB;
 
 #To describe a table 
 describe pessoas;
-
+desc pessoas;
 #To show a database or table in the prompt
 show database;
 
@@ -70,4 +70,46 @@ drop database exampleDB;
 #If the order of the table are the same as the values you can't need to put the table, for example:
 	INSERT INTO pessoas VALUES																																								 
 		('Godofredo', '1900-01-02', 'M', '78.5', '1.83', 'Brazil');																																							 
+
+#Now we will change tables adding column to them
+	alter table pessoas
+	add column profissao varchar(10);
+
+#To remove a column
+	alter table pessoas
+	drop column profissao; 
+
+#To choose the position of the column (in the midle of the table or after the firt)
+	alter table pessoas
+	add column profissao varchar(10) after name;
+
+#To choose the position of the column (Now we will put the new colum before the first)
+	alter table pessoas
+	add column codigo int first;
+
+#For a field placement at first you will put "First", for any field (column) you want to insert after the first you will put "after", and by default if you don't put anything it will go to the least.
+	
+#To modify a column (A column parameter for example)
+	modify column profissao varchar(20) not null default '';
+
+The command above uses the "default" because by default the workbench put every new command as null, and add a parameter with "not null" will bug the system
+
+
+
+
+
+
+
+
+
+
+										  
+
+									  
+
+
+
+
+
+
 																																									 
