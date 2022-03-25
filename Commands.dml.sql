@@ -119,6 +119,19 @@ drop database exampleDB;
 	alter table cursos
 	add primary key(idcurso);
 
+#Now let's start manipulating lines, for this i will put some lines her with wrong sintaxes and go correcting with some commands
+	insert into cursos values
+	('1', 'HTML4', 'Curso de HTML5', '40', '37', '2014'),
+	('2', 'Algoritimos', 'Lógica de programação', '20', '15', '2014'),
+	('3', 'Photoshop', 'Dicas de Photoshop CC', '10', '8', '2014')
+	('4', 'PGP', 'Curso de PHP para iniciantes', '40', '20', '2010')
+	('5', 'Jarva', 'Introdução à Linguagem Java', '10', '8', '2000')
+	('6', 'MYSQL', 'Banco de dados MYSQL', '30', '15', '2016')
+	('7', 'Word', 'Curso completo de '));
+										   
+
+										  
+
 										   
 										   
 										  
