@@ -107,9 +107,9 @@ drop database exampleDB;
 										   
 	create table if not exists cursos (
 	name varchar(30) not null unique,
-	description text,
+	descricao text,
 	carga int unsigned,
-	totalclasses int unsigned,
+	totalaulas int unsigned,
 	ano year default '2016'
 	) default charset = utf8;
 
@@ -123,11 +123,67 @@ drop database exampleDB;
 	insert into cursos values
 	('1', 'HTML4', 'Curso de HTML5', '40', '37', '2014'),
 	('2', 'Algoritimos', 'Lógica de programação', '20', '15', '2014'),
-	('3', 'Photoshop', 'Dicas de Photoshop CC', '10', '8', '2014')
-	('4', 'PGP', 'Curso de PHP para iniciantes', '40', '20', '2010')
-	('5', 'Jarva', 'Introdução à Linguagem Java', '10', '8', '2000')
-	('6', 'MYSQL', 'Banco de dados MYSQL', '30', '15', '2016')
-	('7', 'Word', 'Curso completo de '));
+	('3', 'Photoshop', 'Dicas de Photoshop CC', '10', '8', '2014'),
+	('4', 'PGP', 'Curso de PHP para iniciantes', '40', '20', '2010'),
+	('5', 'Jarva', 'Introdução à Linguagem Java', '10', '8', '2000'),
+	('6', 'MYSQL', 'Banco de dados MYSQL', '30', '15', '2016'),
+	('7', 'Word', 'Curso completo de Word', '40', '30', '2016'),
+	('8', 'Sapateado', 'Danças Rítimicas', '40', '30', '2018'),
+	('9', 'Cozinha Árabe', 'Aprenda a fazer kibe', '40', '30', '2018'),
+	(DEFAULT, 'Youtuber', 'Gerar polêmica e ganhar inscritos', '5', '2', '2018');
+										   
+#Now let's modify the lines
+	update cursos 
+	set nome = 'HTLML5'
+	where idcurso = '1';
+										   
+#To modify 2 resources at the same time
+	update cursos
+	set nome = 'PHP', ano = '2015'
+	where idcurso = '4';
+
+#Now with 3 resourses and put a limit on command actions (when you put the 'limit' command you affect the amount of lines you have entered)
+	update cursos
+	set nome = 'Java', carga = '40', ano = '2015'
+	where idcurso = '5'
+	limit 1;
+
+#To delete lines you can use the command "delete", see some examples
+	delete from cursos
+	where idcurso = '8';
+
+		or 
+
+	delete from cursos 
+	where ano = 2018
+	limit 3;
+
+#To remove all the registry (lines) from a table you use the commmand
+	truncate table cursos;
+										   
+										   
+										   
+										  
+										  
+
+
+
+
+
+
+
+
+
+
+										   	
+										   
+
+
+
+
+
+
+										  
 										   
 
 										  
