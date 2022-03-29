@@ -19,10 +19,17 @@ use exampleDB;
 #To describe a table 
 describe pessoas;
 desc pessoas;
+
 #To show a database or table in the prompt
 show database;
 
-#get the status of the DB or see what DB you are in use
+#To see how you create the table use the command
+show create table example;
+
+#To see the database creation too
+show create database example;
+
+#get the status of the DB or see what DB is in use
 status;
 
 #To see the tables in the current database 
@@ -90,6 +97,7 @@ drop database exampleDB;
 #For a field placement at first you will put "First", for any field (column) you want to insert after the first you will put "after", and by default if you don't put anything it will go to the least.
 	
 #To modify a column (A column parameter for example)
+	alter table pessoas;									   	
 	modify column profissao varchar(20) not null default '';
 
 #The command above uses the "default" because by default the workbench put every new command as null, and add a parameter with "not null" will bug the system, we can never let one constrain override the other
