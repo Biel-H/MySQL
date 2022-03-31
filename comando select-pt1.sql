@@ -123,11 +123,13 @@ Documentation about select command
 
 #Another function is "max()", where you use to select the maximum result of a tables
     select max(carga) from cursos;
+    
     #You can view the maximum resource for a expecific column too
         select max(totaulas) from cursos where ano = '2015';  -> within the courses of the year 2015 what was the maximum number of classes I had
 
 #To make a search of the minimum result of a table use "min()"
     select min(carga) from cursos;
+    
     #You can view the maximum resource for a expecific column too and you can add a parameter to show the name of the line for example
     select nome, min(totaulas) from cursos where ano = '2015';
 
