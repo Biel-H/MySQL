@@ -112,8 +112,7 @@ Documentation about select command
     where nome like '%Silva';
         #Any name that finish with Silva
 
-#Pra explicar esse eu vou em portugues msm kkkkk. O comando 'distinct' serve para você distinguir uma  palavra em uma lista, por exemplo, na tabela há varias pessoas de varios paises e você deseja apenas saber quais são os paises que existem na tabela, em vez de repetir varios paises de acordo com cada pessoa ele ira mostrar apenas os existentes. Em caso de duvida
-ve o video do guanabara "Curso MySQL#12 min - 21:00"
+#Pra explicar esse eu vou em portugues msm kkkkk. O comando 'distinct' serve para você distinguir uma  palavra em uma lista, por exemplo, na tabela há varias pessoas de varios paises e você deseja apenas saber quais são os paises que existem na tabela, em vez de repetir varios paises de acordo com cada pessoa ele ira mostrar apenas os existentes. Em caso de duvida ve o video do guanabara "Curso MySQL#12 min - 21:00"
     select distinct nacionalidade from gafanhotos;
      
 #Now let's' start to see aggregation functions, the firs is the 'count' function, to count the rows of the tables
