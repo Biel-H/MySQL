@@ -2,7 +2,7 @@ Foreign key e introduction to join
 
 #Innodb it's' a engine that suport foreign keys, another examples of engines are MyISAM and xtraDB.
 #But only the InnoDB and xtraDB supports transations (ACID) and MyISAM not follow the rules of the ACID. 
-#An explanation about ACID (Portuguese): 
+#An explanation about ACID (Portuguese): https://medium.com/opensanca/o-que-%C3%A9-acid-59b11a81e2c6#:~:text=ACID%20%C3%A9%20um%20conceito%20que,%2C%20Consist%C3%AAncia%2C%20Isolamento%20e%20Durabilidade. 
 
 
 #Adding a foreign key -> basically you have to reference the table that you want to go and their priamry key  
