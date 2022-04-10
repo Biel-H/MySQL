@@ -2,7 +2,7 @@ Foreign key e introduction to join
 
 #Innodb it's' a engine that suport foreign keys, another examples of engines are MyISAM and xtraDB.
 #But only the InnoDB and xtraDB supports transations (ACID) and MyISAM not follow the rules of the ACID. 
-#An explanation about ACID (Portuguese): https://medium.com/opensanca/o-que-%C3%A9-acid-59b11a81e2c6#:~:text=ACID%20%C3%A9%20um%20conceito%20que,%2C%20Consist%C3%AAncia%2C%20Isolamento%20e%20Durabilidade.
+#An explanation about ACID (Portuguese): 
 
 
 #Adding a foreign key -> basically you have to reference the table that you want to go and their priamry key  
@@ -21,6 +21,8 @@ Foreign key e introduction to join
     where idcurso = '6';
     #Referential integrity is a way to "protect" the delete of a column for example. When you relate a table to another table and add datas that are connected each other you can't' make inconsistencies like delete  the column that they are related.
     #Or in another words  i can't' modify a field if he affects my transaction
+
+#All the join commands useds are "1 for n" relation
 
 #Using join or inner join to make a search entry two different entities
     select gafanhotos.nome, gafanhotos.cursopreferido, cursos.nome, cursos.ano
